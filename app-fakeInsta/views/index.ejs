@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<%- include("includes/head", {title:"Fake Instagram - Home"}) %>
+
+<body>
+  <%- include('includes/header') %>
+
+  <main class="container content-home">
+    <div class="card">
+
+      <div class="card-header">
+        <div>
+          <img class="avatar" src="/img/example-user.png">
+          <b>nati.carolira</b>
+        </div>
+        <img src="/img/icons/more-vertical.svg">
+      </div>
+
+      <div class="card-img">
+        <img src="/img/publication_example.jpg">
+      </div>
+      <div class="card-body">
+        <div class="card-itens">
+          <div class="likes">
+            <img src="/img/icons/heart.svg">
+            <b>35 likes</b>
+          </div>
+          <b>Postado no dia: 16/04/2020</b>
+        </div>
+        <div class="card-comments">
+          <p><b>ovinnyoliveira</b> Mano que incrivel</p>
+          <p><b>front.hendy</b>|Show</p>
+          <p><b>verofefo</b> aff..</p>
+        </div>
+      </div>
+
+      <form class="form-comments" action="">
+        <input type="text" placeholder="Adicione um comentário...">
+        <button>Publicar</button>
+      </form>
+
+    </div>
+  </main>
+
+</body>
+
+</html>

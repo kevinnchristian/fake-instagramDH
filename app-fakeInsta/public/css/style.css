@@ -1,0 +1,674 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100vw;
+}
+
+/* ---------- Config header -------- */
+header {
+  background: #fff;
+  border-bottom: 0.5px solid #d7d7d7;
+  height: 3.5rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 72rem;
+  padding: 0 1rem;
+}
+
+.header {
+  margin: auto 4px;
+}
+
+.header .logoHeader {
+  width: 8rem;
+  max-width: 8rem;
+}
+
+.header .logoHeader img {
+  width: 100%;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header nav form #buscar-usuarios {
+  background-image: url("/img/search.png");
+  background-position: left;
+  background-position-x: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  color: #5e5e5e;
+  height: 1.8rem;
+  width: 14rem;
+  max-width: 14rem;
+  margin-right: 10px;
+  padding-left: 1.8rem;
+  outline: none;
+}
+
+.header nav form #buscar-usuarios:focus {
+  border: 0.5px solid #000000;
+}
+
+.header nav #icon-home {
+  width: 24px;
+  max-width: 24px;
+  margin-right: 10px;
+}
+
+.avatar-content a {
+  color: #000;
+  text-decoration: none;
+}
+
+.avatar-content a img {
+  width: 24px;
+  max-width: 24px;
+}
+
+/* ------ Config container pagina Login e Cadastro ----- */
+.auth {
+  background: #fafafa;
+}
+
+.container {
+  max-width: 69rem;
+  margin: 0 auto;
+}
+
+.content-auth {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 57rem;
+  height: 95vh;
+}
+
+/* --- Config Banner Lateral pagina Login e Cadastro --- */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner .img-slide {
+  height: 414px;
+  width: 234px;
+  position: absolute;
+  top: 87px;
+  left: 132px;
+}
+
+.banner .img-slide .imgS {
+  height: 414px;
+  width: 234px;
+  position: absolute;
+}
+
+.banner p {
+  background: linear-gradient(to right, #f36b82 35%, #00b7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* --- Config Formulário pagina Login e Cadastro --- */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo {
+  max-width: 150px;
+  display: flex;
+}
+
+#logo img {
+  width: 100%;
+}
+
+.form-auth,
+.form-auth-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  height: 420px;
+  width: 350px;
+  max-width: 350px;
+  padding: 2rem 0;
+}
+
+.form-auth *,
+.form-auth-register * {
+  margin: 10px 0;
+}
+
+.form-auth input,
+.form-auth-register input {
+  background-color: #f7f7f7;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 4px;
+  color: #000;
+  width: 18rem;
+  max-width: 18rem;
+  padding: 10px 0;
+  outline: none;
+}
+
+/* --- Config input da pagina Cadastro --- */
+.form-auth-register input {
+  padding-left: 1em;
+}
+
+.form-auth input:focus,
+.form-auth-register input:focus {
+  border: 0.5px solid #000000;
+}
+
+/* --- Config input da pagina Login --- */
+.form-auth #email {
+  background-image: url("/img/icon-login.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 0.5rem;
+  background-size: 1rem;
+  padding-left: 2rem;
+}
+
+/* --- Config input da pagina Login --- */
+.form-auth #password {
+  background-image: url("/img/icon-password.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 0.5rem;
+  background-size: 1rem;
+  padding-left: 2rem;
+}
+
+.form-auth button,
+.form-auth-register button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #0095f6;
+  color: #fff;
+  width: 18rem;
+  max-width: 18rem;
+  padding: 7px 0;
+}
+
+.form-auth button:hover,
+.form-auth-register button:hover {
+  background-color: #2ba5f7;
+  transition: 0.2s;
+}
+
+/* --- Config termo e política da pagina Cadastro --- */
+.form-auth-register {
+  height: 550px;
+}
+
+.form-auth-register p {
+  text-align: justify;
+  width: 18rem;
+  max-width: 18rem;
+}
+
+.form-auth .register p,
+.form-auth-register .register p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  max-width: 18rem;
+  padding: 2px 0;
+}
+
+.form-auth .register a,
+.form-auth-register .register a {
+  color: #00b7ff;
+}
+
+.form-auth .register a:hover,
+.form-auth-register .register a:hover {
+  color: #2ba5f7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+/* ---- Config pagina postar/publicar ---- */
+
+.content-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0;
+}
+
+.content-post .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 10rem;
+  width: 40rem;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+.content-post .card form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-post .card form button {
+  background-color: #00b7ff;
+  border: 0.5px solid #00b7ff;
+  border-radius: 4px;
+  color: #fff;
+  align-self: flex-end;
+  width: 5rem;
+  padding: 0.3rem 0;
+  outline: none;
+}
+
+.content-post .card form button:hover {
+  background-color: #0095f6;
+  border: 0.5px solid #0095f6;
+  transition: 0.2s;
+}
+
+/*-------- Config pagina Home --------*/
+
+.content-home {
+  width: 35rem;
+  max-width: 38rem;
+  margin-top: 5rem;
+} 
+
+.content-home .card * {
+  width: 100%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .card-header img {
+  width: 24px;
+  max-width: 24px;
+  margin-right: 2px;
+}
+
+.card .card-body {
+  padding: 0.5rem 0.8rem;
+}
+
+.card .card-body .card-itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .card-body .card-itens b {
+  text-align: end;
+}
+
+.card .card-body .card-itens .likes img {
+  width: 24px;
+  max-width: 24px;
+}
+
+.card .card-body .card-comments {
+  margin-top: 0.5rem;
+}
+
+.card .card-body .card-comments p {
+  margin-bottom: 0.7rem;
+}
+
+.card .form-comments{
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid #d7d7d7;
+  padding: 0.8rem 0.8rem;
+}
+
+.card .form-comments input{
+  border: none;
+  width: 100%;
+}
+
+.card .form-comments input:focus,  .form-comments .input:active{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.card .form-comments button{
+  background-color: none;
+  background: none;
+  border: none;
+  color: #2ba5f7;
+  width: 5rem;
+  padding: 0.8rem 0;
+  outline: none;
+}
+
+footer {
+  height: 1rem;
+  width: 100%;
+}
+
+footer p,
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaaaaa;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+footer a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*---- Config responsivo login e cadastro ---- */
+
+@media (max-width: 1024px) {
+  .banner {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .logoHeader {
+    height: 1.4rem;
+    width: 7rem;
+  }
+
+  .header nav form #buscar-usuarios {
+    background-position-x: 0.5rem;
+    background-size: 0.8rem;
+    font-size: 0.8rem;
+    width: 12rem;
+  }
+
+  .header nav #icon-home {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .avatar-content img {
+    width: 20px;
+  }
+
+  .avatar-content b {
+    font-size: 0.8rem;
+  }
+
+  .form-auth {
+    height: 380px;
+    width: 350px;
+  }
+
+  .form-auth-register {
+    height: 450px;
+    width: 350px;
+  }
+
+  .form-auth *,
+  .form-auth-register * {
+    margin: 6px 0;
+  }
+
+  .form-auth input,
+  .form-auth-register input {
+    font-size: 0.8em;
+    width: 18rem;
+    padding: 10px 0;
+  }
+
+  .form-auth-register input {
+    padding-left: 0.8rem;
+  }
+
+  .form-auth #email {
+    background-size: 0.8rem;
+    padding-left: 1.8rem;
+  }
+
+  .form-auth #password {
+    background-size: 0.8rem;
+    padding-left: 1.8rem;
+  }
+
+  .form-auth button,
+  .form-auth-register button {
+    font-size: 0.8em;
+    width: 18rem;
+    padding: 7px 0;
+  }
+
+  .form-auth-register p {
+    font-size: 0.8em;
+    width: 18rem;
+  }
+
+  .form-auth .register p,
+  .form-auth-register .register p {
+    font-size: 0.8em;
+    width: 18rem;
+  }
+
+  .content-post .card {
+    height: 9rem;
+    width: 30rem;
+    padding: 0.8rem;
+  }
+
+  .content-post .card h2 {
+    font-size: 1.8em;
+  }
+
+  .content-post .card p, .content-post .card form input, label{
+    font-size: 0.9em;
+  }
+  
+  .content-post .card form button {
+    width: 4rem;
+    padding: 0.3rem 0;
+  }
+
+  .content-home {
+    width: 30rem;
+  } 
+
+  .content-home * {
+    font-size: 0.9em;
+  }
+  
+  .card .card-header img {
+    width: 20px;
+  }
+  
+  .card .card-body .card-itens .likes img {
+    width: 18px;
+  }
+  
+  footer p,
+  footer a {
+    font-size: 0.8em;
+  }
+}
+
+@media(max-width:540px) {
+  .header .logoHeader {
+    width: 6rem;
+  }
+
+  .header nav form #buscar-usuarios {
+    display: none;
+  }
+
+  .header nav #icon-home {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .avatar-content img {
+    width: 20px;
+  }
+
+  .avatar-content b {
+    font-size: 0.8rem;
+  }
+
+  .content-home {
+    width: 100%;
+    padding: 0;
+  } 
+}
+
+@media(max-width: 420px) {
+  .form-auth,
+  .form-auth-register {
+    width: 300px;
+  }
+
+  .form-auth *,
+  .form-auth-register * {
+    margin: 5px 0;
+  }
+
+  .form-auth input,
+  .form-auth-register input {
+    width: 16rem;
+    padding: 8px 0;
+  }
+
+  .form-auth-register input {
+    padding-left: 0.8rem;
+  }
+
+  .form-auth button,
+  .form-auth-register button {
+    width: 16rem;
+    padding: 6px 0;
+  }
+
+  .form-auth-register p {
+    width: 16rem;
+  }
+
+  .form-auth .register p,
+  .form-auth-register .register p {
+    width: 16rem;
+  }
+
+  .content-post .card {
+    height: 9rem;
+    width: 18rem;
+    padding: 0.7rem;
+  }
+
+  .content-post .card h2 {
+    font-size: 1.2em;
+  }
+
+  .content-post .card p, .content-post .card form input, label{
+    font-size: 0.7em;
+  }
+
+  .content-post .card form button {
+    font-size: 0.7em;
+    width: 3.5rem;
+    padding: 0.3rem 0;
+  }
+
+  .card .card-header {
+    padding: 0.5rem 0.5rem;
+  }
+  
+  .card .card-header img {
+    width: 18px;
+  }
+  
+  .card .card-body {
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .card .card-body .card-itens b {
+    font-size: 0.8em;
+  }
+  
+  .card .card-body .card-itens .likes img {
+    width: 18px;
+  }
+
+  .card .form-comments{
+    padding: 0.5rem 0.5rem;
+  }
+    
+  .card .form-comments button{
+    padding: 0.5rem 0;
+  }
+}
+
+@media(max-width:310px) {
+  .header .logoHeader {
+    width: 5.5rem;
+  }
+
+  .header nav #icon-home {
+    width: 22px;
+    margin-right: 7px;
+  }
+
+  .avatar-content b {
+    font-size: 0.6rem;
+  }
+
+  .content-home {
+    width: 100%;
+    padding: 0;
+  } 
+}

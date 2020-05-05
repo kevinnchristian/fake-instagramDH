@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<%- include("includes/head", {title:"Fake Instagram - Publicar"}) %>
+
+<body>
+  <%- include('includes/header') %>
+
+  <main class="container content-post">
+    <section class="card">
+      <h2>Criar publicação</h2>
+      <p>Faça o upload da foto que deseja postar!</p>
+      <form action="">
+        <div>
+          <label for="photo">Selecione a foto</label>
+          <input type="file" name="photo" id="photo">
+        </div>
+        <button type=submit>Postar</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
