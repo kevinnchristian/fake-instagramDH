@@ -37,7 +37,7 @@
     </div>
     
     <div class="content">
-      <form class="form-auth-register card" action="/login" method="POST">
+      <form class="form-auth-register card" action="/registrar" method="POST">
         <div id="logo">
           <img src="img/logo.png" alt="Logo">
         </div>
@@ -50,6 +50,13 @@
         <div class="register card">
           <p>Tem uma conta?&nbsp<a href="/login"><b>Conecte-se</b></a></p>
         </div>
+
+        <div class="msg-errorRegister">
+          <% if (typeof msg !== "undefined") { %>
+            <p> <%= msg %>  </p>
+          <% } %>  
+        </div>
+
       </form>
     </div>
 

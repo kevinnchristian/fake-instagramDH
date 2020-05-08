@@ -1,14 +1,12 @@
 const express = require('express');
-const path = require('path');
+const router = express.Router();
 
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
 const postController = require('../controllers/postController');
+const auth = require('../middlewares/auth');
 
-const router = express.Router();
-
-
-/* GET home page. */
+const upload = require('../configs/uploads');
 
 router.get('/', authController.create);
 
@@ -18,10 +16,11 @@ router.post('/login', authController.store);
 router.get('/registrar', userController.create);
 router.post('/registrar', userController.store);
 
-router.get('/publicar', postController.create);
-router.post('/publicar', postController.store);
+router.get('/publicar', auth,postController.create);
+router.post('/publicar', upload.any(),postController.store);
+// Para salvar ele na pasta desejada usa o .any
 
-router.get("/home", function (req, res, next) {
+router.get("/home", auth,function (req, res, next) {
   res.render("index");
 });
 

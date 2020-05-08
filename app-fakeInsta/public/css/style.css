@@ -67,6 +67,12 @@ header {
   border: 0.5px solid #000000;
 }
 
+.header nav #icon-publish {
+  width: 24px;
+  max-width: 24px;
+  margin-right: 10px;
+}
+
 .header nav #icon-home {
   width: 24px;
   max-width: 24px;
@@ -266,6 +272,32 @@ header {
   transition: 0.2s;
   text-decoration: none;
 }
+
+/* ---- Config mensagens de erro Login e Cadastro ---- */
+
+/* .msg-errorRegister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3bfc8;
+  border: 1px solid #f36b82;
+  border-radius: 4px;
+  color: #f36b82;
+  height: 50px;
+  width: 256px;
+}
+
+.msg-errorLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3bfc8;
+  border: 1px solid #f36b82;
+  border-radius: 4px;
+  color: #f36b82;
+  height: 50px;
+  width: 256px;
+} */
 
 /* ---- Config pagina postar/publicar ---- */
 

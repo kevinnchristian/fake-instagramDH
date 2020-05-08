@@ -46,6 +46,13 @@
         <div class="register card">
           <p>Não tem cadastro?&nbsp<a href="/registrar"><b>Cadastre-se</b></a></p>
         </div>
+
+        <div class="msg-errorLogin">
+          <% if (typeof msg !== "undefined") { %>
+            <p> <%= msg %>  </p>
+          <% } %>  
+        </div>
+
       </form>
     </div>
 
