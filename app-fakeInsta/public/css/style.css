@@ -24,7 +24,7 @@ header {
   align-items: center;
   height: 100%;
   max-width: 72rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .header {
@@ -275,29 +275,19 @@ header {
 
 /* ---- Config mensagens de erro Login e Cadastro ---- */
 
-/* .msg-errorRegister {
+.msg-errorRegister {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3bfc8;
-  border: 1px solid #f36b82;
-  border-radius: 4px;
   color: #f36b82;
-  height: 50px;
-  width: 256px;
 }
 
 .msg-errorLogin {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3bfc8;
-  border: 1px solid #f36b82;
-  border-radius: 4px;
   color: #f36b82;
-  height: 50px;
-  width: 256px;
-} */
+}
 
 /* ---- Config pagina postar/publicar ---- */
 
@@ -353,6 +343,10 @@ header {
 
 .content-home .card * {
   width: 100%;
+}
+
+.card {
+  margin: 1rem;
 }
 
 .card-header {
@@ -529,6 +523,14 @@ footer a:hover {
   .form-auth-register .register p {
     font-size: 0.8em;
     width: 18rem;
+  }
+
+  .msg-errorRegister {
+    font-size: 0.8em;
+  }
+  
+  .msg-errorLogin {
+    font-size: 0.8em;
   }
 
   .content-post .card {
