@@ -371,13 +371,22 @@ header {
   align-items: center;
 }
 
-.card .card-body .card-itens b {
+.card .card-body .card-itens p {
+  color: #aaaaaa;
+  font-size: 0.8em;
   text-align: end;
 }
 
-.card .card-body .card-itens .likes img {
-  width: 24px;
-  max-width: 24px;
+.card .card-body .card-itens .likes img {cd
+  width: 22px;
+  max-width: 22px;
+}
+
+.card .card-body .card-itens .likes img:hover {
+  background-image: url('/img/like.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 22px;
 }
 
 .card .card-body .card-comments {
