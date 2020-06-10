@@ -17,14 +17,12 @@ router.post('/login', authController.store);
 router.get('/registrar', userController.create);
 router.post('/registrar', userController.store);
 
+router.get('/home', auth, postController.index);
 router.get('/publicar', auth,postController.create);
 router.post('/publicar', upload.any(),postController.store);
 // Para salvar ele na pasta desejada usa o .any
-
 router.get('/publicacao/:id/like', postController.like);
 
 router.post('/home', commentController.store);
-
-router.get('/home', auth, postController.index);
 
 module.exports = router;
